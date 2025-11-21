@@ -1,0 +1,37 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  text-align: left;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.5fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+}
